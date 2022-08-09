@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NATURE_REPUNLIC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.scrollTo.min.js"></script>
+  <script src="./js/main.js"></script>
+  
+</head>
+<body>
+  
+  <div class="wrap">
+
+    <div class="gnb_outer">
+      <nav class="gnb_box">
+        <select>
+          <option>한국어 / KOR</option>
+          <option>일본어 / JP</option>
+          <option>중국어 / CHN</option>
+        </select>
+        <ul class="gnb">
+          <li><a href="#!">로그인</a></li>
+          <li><a href="#!">회원가입</a></li>
+          <li><a href="#!">고객센터</a></li>
+          <li><a href="#!">멤버십</a></li>
+        </ul>
+      </nav>
+    </div><!--gnb_outer-->
+
+
+    <input type="checkbox" id="mob_search">
+    <header class="header">
+
+      <div class="logo">
+        <h1><a href="#!"><img src="./img/logo.png" alt=""></a></h1>
+      </div>
+
+      <div class="mob_menu">
+        <i class="xi-bars"></i>
+        <i class="xi-close"></i>
+      </div>
+
+
+      <div class="mob_btn">
+        <label for="mob_search" class="mob_search"><i class="xi-search"></i></label>
+      </div>
+
+
+      <div class="web_search_box">
+        <div>
+          <input type="text" placeholder="검색">
+          <a href="#"><i class="xi-search"></i></a>
+        </div>
+      </div>
+
+
+      <div class="web_btn_box">
+        <div class="web_my">
+          <a href="#!">
+            <div class="web_btn my"><i class="xi-user-o"></i></div>
+            <div class="web_txt">마이페이지</div>
+          </a>
+        </div>
+        <div class="web_cart">
+          <a href="#!">
+            <div class="web_btn my"><i class="xi-cart-o"></i></div>
+            <div class="web_txt">장바구니</div>
+          </a>
+        </div>
+        <div class="web_time">
+          <a href="#!">
+            <div class="web_btn my"><i class="xi-clock-o"></i></div>
+            <div class="web_txt">최근본상품</div>
+          </a>
+        </div>
+      </div>
+
+    </header><!--header-->
+
+
+    <input type="radio" name="menu_rad" id="product" checked>
+    <input type="radio" name="menu_rad" id="list">
+    
+    <div class="mob_menu_box">
+  
+      <div class="container">
+        <div class="mob_close"><i class="xi-close"></i></div>
+
+        <div class="btn_top">
+          <div class="login">
+            <i class="xi-user-o"></i>로그인을 해주세요
+          </div>
+          <div class="sign">
+            <a href="#!">회원가입</a>
+          </div>
+        </div>
+
+        <div class="btn_check">
+
+          <div class="label_box">
+            <label for="product" class="product">최근 본 상품<span>(0)</span></label>
+            <label for="list" class="list">위시리스트<span>(0)</span></label>
+          </div>
+        
+          <div class="product_box check_common">
+            <p><i class="xi-error-o"></i></p>
+            <p>최근 본 상품이 없습니다.</p>
+          </div>
+          <div class="list_box check_common">
+            <p><i class="xi-error-o"></i></p>
+            <p>최근 본 리스트가 없습니다.</p>
+          </div>
+        </div>
+
+        <div class="btn_eve">
+          <div class="event">
+            <p><i class="xi-gift-o"></i></p>
+            <p>이벤트</p>
+          </div>
+          <div class="my">
+            <p><i class="xi-user-o"></i></p>
+            <p>마이페이지</p>
+          </div>
+        </div>
+
+        <div class="btn_li_menu">
+          <div class="menu skin">
+            <p>스킨케어</p>
+            <p class="skin_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li skin_li">
+            <li>스킨/미스트</li>
+            <li>로션</li>
+            <li>에센스/앰플/세럼</li>
+            <li>크림</li>
+            <li>아이크림</li>
+            <li>베이비</li>
+            <li>한방</li>
+          </ul>
+
+          <div class="menu from">
+            <p>클렌징</p>
+            <p class="form_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li form_li">
+            <li>클렌징폼</li>
+            <li>클렌징워터/오일</li>
+            <li>클렌징크림</li>
+            <li>클렌징젤/필링</li>
+            <li>클렌징티슈/비누</li>
+            <li>클렌징기타</li>
+          </ul>
+
+          <div class="menu mask">
+            <p>팩&마스크</p>
+            <p class="mask_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li mask_li">
+            <li>마스크시트</li>
+            <li>부분마스크시트</li>
+            <li>워시오프/필오프팩</li>
+            <li>슬리핑팩</li>
+            <li>마사지</li>
+          </ul>
+
+          <div class="menu makeup">
+            <p>베이스 메이크업</p>
+            <p class="makeup_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li makeup_li">
+            <li>베이스/프라이머</li>
+            <li>파운데이션/컨실러</li>
+            <li>CC/BB</li>
+            <li>파우더/팩트/쿠션</li>
+          </ul>
+
+          <div class="menu point">
+            <p>포인트 메이크업</p>
+            <p class="point_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li point_li">
+            <li>블러셔/하이라이터</li>
+            <li>아이섀도우</li>
+            <li>마스카라</li>
+            <li>아이라이너</li>
+            <li>아이브로우</li>
+            <li>립밤/틴트</li>
+            <li>립스틱/립라이너</li>
+            <li>립글로스</li>
+            <li>네일</li>
+          </ul>
+
+          <div class="menu ssun">
+            <p>썬 케어</p>
+            <p class="ssun_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li ssun_li">
+            <li>선크림/젤</li>
+            <li>선스프레이/퍼프</li>
+            <li>기타</li>
+          </ul>
+
+          <div class="menu body">
+            <p>바디&헤어</p>
+            <p class="body_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li body_li">
+            <li>바디클렌저</li>
+            <li>바디로션/크림/미스트</li>
+            <li>바디오일/스크럽</li>
+            <li>향수/방향/디퓨저</li>
+            <li>핸드/풋케어</li>
+            <li>데오드란트/제모</li>
+            <li>바디기타</li>
+            <li>샴푸/린스</li>
+            <li>헤어팩/에센스</li>
+            <li>스타일링</li>
+            <li>헤어컬러링</li>
+          </ul>
+
+          <div class="menu man">
+            <p>남자</p>
+            <p class="man_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li man_li">
+            <li><a href="#!">스킨/로션</a></li>
+            <li><a href="#!">크림/에센스/아이</a></li>
+            <li><a href="#!">클렌저/쉐이빙</a></li>
+            <li><a href="#!">선케어/BB</a></li>
+            <li><a href="#!">기타</a></li>
+          </ul>
+
+          <div class="menu brush">
+            <p>화장소품</p>
+            <p class="brush_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li brush_li">
+            <li><a href="#!">퍼프</a></li>
+            <li><a href="#!">브러쉬</a></li>
+            <li><a href="#!">화장솜/면봉</a></li>
+            <li><a href="#!">클렌징 소품</a></li>
+            <li><a href="#!">메이크업 소품</a></li>
+            <li><a href="#!">네일 소품</a></li>
+            <li><a href="#!">기타 소품</a></li>
+          </ul>
+
+          <div class="menu set">
+            <p>기획세트</p>
+            <p class="set_btn btn"><i class="xi-angle-down"></i></pc>
+          </div>
+          <ul class="menu_li set_li">
+            <li><a href="#!">색조세트</a></li>
+            <li><a href="#!">기초세트</a></li>
+            <li><a href="#!">바디세트</a></li>
+            <li><a href="#!">옴므세트</a></li>
+          </ul>
+
+        </div>
+
+        <div class="btn_new">
+          <p>BEST</p>
+          <p>NEW</p>
+        </div>
+
+        <div class="btn_media">
+          <div><a href="#!">소식/미디어</a></div>
+          <div><a href="#!">멤버십</a></div>
+          <div><a href="#!">고객센터</a></div>
+        </div>
+
+
+      </div>
+
+    </div><!--mob_menu_box-->
+
+
+    <div class="mob_search_box">
+      <div>
+        <input type="text" placeholder="검색">
+        <a href="#"><i class="xi-search"></i></a>
+      </div>
+    </div><!--mob_search_box-->
+
+
+    <div class="lnb_outer">
+
+      <nav class="lnb">
+        <div class="cate open"><i class="xi-align-justify"></i>카테고리</div>
+        <ul class="lnb_menu">
+          <li><a href="#!">신상</a></li>
+          <li><a href="#!">BEST</a></li>
+          <li><a href="#!">이벤트</a></li>
+          <li><a href="#!">쇼핑</a></li>
+          <li><a href="#!">소식/미디어</a></li>
+          <li><a href="#!">커뮤니티</a></li>
+        </ul>
+        
+      </nav>
+      
+      <div class="list">
+        <div class="cate_list">
+          <ul>
+            <li class="on">
+              <span>스킨케어</span>
+              <div class="common_box skin_box">
+                <ul>
+                  <li>스킨/미스트</li>
+                  <li>로션</li>
+                  <li>에센스/앰플/세럼</li>
+                  <li>크림</li>
+                  <li>아이크림</li>
+                  <li>베이비</li>
+                  <li>한방</li>
+                </ul>
+                <div class="pro_box">
+                  <p>스킨케어 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro01.jpg"></figure>
+                      <p class="txt">비타페어C 토너</p>
+                      <p class="price"><del>18,900원</del> 13,230원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro02.jpg"></figure>
+                      <p class="txt">굿스킨 앰플(10종 택1)</p>
+                      <p class="price"><del>23,000원</del> 5,500원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro03.jpg"></figure>
+                      <p class="txt">콜라겐 드림50 올인원 래디언스톤 업크림SPF35 PA++</p>
+                      <p class="price"><del>26,900원</del> 13,450원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>클렌징</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li>클렌징폼</li>
+                  <li>클렌징워터/오일</li>
+                  <li>클렌징크림</li>
+                  <li>클렌징젤/필링</li>
+                  <li>클렌징티슈/비누</li>
+                  <li>클렌징기타</li>
+                </ul>
+                <div class="pro_box">
+                  <p>클렌징 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro04.jpg"></figure>
+                      <p class="txt">콜라겐 드림 비타민C 캡슐 폼 클렌저</p>
+                      <p class="price"><del>15,000원</del> 5,500원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro05.jpg"></figure>
+                      <p class="txt">진생 로얄 실크 폼 클렌저</p>
+                      <p class="price"><del>20,000원</del> 10,000원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro06.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 폼 클렌저</p>
+                      <p class="price"><del>15,400원</del> 5,500원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>팩&마스크</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li>마스크시트</li>
+                  <li>부분마스크시트</li>
+                  <li>워시오프/필오프팩</li>
+                  <li>슬리핑팩</li>
+                  <li>마사지</li>
+                </ul>
+                <div class="pro_box">
+                  <p>팩 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro07.jpg"></figure>
+                      <p class="txt">[10+10] 불가리안 로즈 에센셜 마스크 시트 (20매)</p>
+                      <p class="price"><del>9,500원</del> 5,900원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro08.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 카밍 케어 마스크 시트</p>
+                      <p class="price"><del>2,000원</del> 1,000원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro09.jpg"></figure>
+                      <p class="txt">히알론 액티브 10 모이스처 마스크 시트</p>
+                      <p class="price"><del>2,000원</del> 1,500원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>베이스 메이크업</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li>베이스/프라이머</li>
+                  <li>파운데이션/컨실러</li>
+                  <li>CC/BB</li>
+                  <li>파우더/팩트/쿠션</li>
+                </ul>
+                <div class="pro_box">
+                  <p>베이스 메이크업 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro10.jpg"></figure>
+                      <p class="txt">네이처 오리진 콜라겐 비비크림 (3종 택 1)</p>
+                      <p class="price"><del>15,900원</del> 9,540원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro11.jpg"></figure>
+                      <p class="txt">프로방스 에어스킨 핏 원데이 래스팅 파운데이션 (4종 택 1)</p>
+                      <p class="price"><del>18,900원</del> 6,600원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro12.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 세럼 커버 쿠션 SPF50+PA+++ (2종 택 1)</p>
+                      <p class="price"><del>25,000원</del> 17,900원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>포인트 메이크업</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li>블러셔/하이라이터</li>
+                  <li>아이섀도우</li>
+                  <li>마스카라</li>
+                  <li>아이라이너</li>
+                  <li>아이브로우</li>
+                  <li>립밤/틴트</li>
+                  <li>립스틱/립라이너</li>
+                  <li>립글로스</li>
+                  <li>네일</li>
+                </ul>
+                <div class="pro_box">
+                  <p>포인트 메이크업 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro10.jpg"></figure>
+                      <p class="txt">네이처 오리진 콜라겐 비비크림 (3종 택 1)</p>
+                      <p class="price"><del>15,900원</del> 9,540원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro11.jpg"></figure>
+                      <p class="txt">프로방스 에어스킨 핏 원데이 래스팅 파운데이션 (4종 택 1)</p>
+                      <p class="price"><del>18,900원</del> 6,600원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro12.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 세럼 커버 쿠션 SPF50+PA+++ (2종 택 1)</p>
+                      <p class="price"><del>25,000원</del> 17,900원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>썬 케어</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li>선크림/젤</li>
+                  <li>선스프레이/퍼프</li>
+                  <li>기타</li>
+                </ul>
+                <div class="pro_box">
+                  <p>썬 케어 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro10.jpg"></figure>
+                      <p class="txt">네이처 오리진 콜라겐 비비크림 (3종 택 1)</p>
+                      <p class="price"><del>15,900원</del> 9,540원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro11.jpg"></figure>
+                      <p class="txt">프로방스 에어스킨 핏 원데이 래스팅 파운데이션 (4종 택 1)</p>
+                      <p class="price"><del>18,900원</del> 6,600원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro12.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 세럼 커버 쿠션 SPF50+PA+++ (2종 택 1)</p>
+                      <p class="price"><del>25,000원</del> 17,900원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>바디&헤어</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li>바디클렌저</li>
+                  <li>바디로션/크림/미스트</li>
+                  <li>바디오일/스크럽</li>
+                  <li>향수/방향/디퓨저</li>
+                  <li>핸드/풋케어</li>
+                  <li>데오드란트/제모</li>
+                  <li>바디기타</li>
+                  <li>샴푸/린스</li>
+                  <li>헤어팩/에센스</li>
+                  <li>스타일링</li>
+                  <li>헤어컬러링</li>
+                </ul>
+                <div class="pro_box">
+                  <p>바디&헤어 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro10.jpg"></figure>
+                      <p class="txt">네이처 오리진 콜라겐 비비크림 (3종 택 1)</p>
+                      <p class="price"><del>15,900원</del> 9,540원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro11.jpg"></figure>
+                      <p class="txt">프로방스 에어스킨 핏 원데이 래스팅 파운데이션 (4종 택 1)</p>
+                      <p class="price"><del>18,900원</del> 6,600원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro12.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 세럼 커버 쿠션 SPF50+PA+++ (2종 택 1)</p>
+                      <p class="price"><del>25,000원</del> 17,900원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>남자</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li><a href="#!">스킨/로션</a></li>
+                  <li><a href="#!">크림/에센스/아이</a></li>
+                  <li><a href="#!">클렌저/쉐이빙</a></li>
+                  <li><a href="#!">선케어/BB</a></li>
+                  <li><a href="#!">기타</a></li>
+                </ul>
+                <div class="pro_box">
+                  <p>남자 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro10.jpg"></figure>
+                      <p class="txt">네이처 오리진 콜라겐 비비크림 (3종 택 1)</p>
+                      <p class="price"><del>15,900원</del> 9,540원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro11.jpg"></figure>
+                      <p class="txt">프로방스 에어스킨 핏 원데이 래스팅 파운데이션 (4종 택 1)</p>
+                      <p class="price"><del>18,900원</del> 6,600원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro12.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 세럼 커버 쿠션 SPF50+PA+++ (2종 택 1)</p>
+                      <p class="price"><del>25,000원</del> 17,900원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>화장소품</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li><a href="#!">퍼프</a></li>
+                  <li><a href="#!">브러쉬</a></li>
+                  <li><a href="#!">화장솜/면봉</a></li>
+                  <li><a href="#!">클렌징 소품</a></li>
+                  <li><a href="#!">메이크업 소품</a></li>
+                  <li><a href="#!">네일 소품</a></li>
+                  <li><a href="#!">기타 소품</a></li>
+                </ul>
+                <div class="pro_box">
+                  <p>화장소품 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro10.jpg"></figure>
+                      <p class="txt">네이처 오리진 콜라겐 비비크림 (3종 택 1)</p>
+                      <p class="price"><del>15,900원</del> 9,540원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro11.jpg"></figure>
+                      <p class="txt">프로방스 에어스킨 핏 원데이 래스팅 파운데이션 (4종 택 1)</p>
+                      <p class="price"><del>18,900원</del> 6,600원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro12.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 세럼 커버 쿠션 SPF50+PA+++ (2종 택 1)</p>
+                      <p class="price"><del>25,000원</del> 17,900원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+            <li>
+              <span>기획세트</span>
+              <div class="common_box form_box">
+                <ul>
+                  <li><a href="#!">색조세트</a></li>
+                  <li><a href="#!">기초세트</a></li>
+                  <li><a href="#!">바디세트</a></li>
+                  <li><a href="#!">옴므세트</a></li>
+                </ul>
+                <div class="pro_box">
+                  <p>기획세트 BEST</p>
+                  <p class="line"></p>
+                  <div class="cate_pro">
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro10.jpg"></figure>
+                      <p class="txt">네이처 오리진 콜라겐 비비크림 (3종 택 1)</p>
+                      <p class="price"><del>15,900원</del> 9,540원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro11.jpg"></figure>
+                      <p class="txt">프로방스 에어스킨 핏 원데이 래스팅 파운데이션 (4종 택 1)</p>
+                      <p class="price"><del>18,900원</del> 6,600원</p>
+                    </div>
+                    <div class="c_pro">
+                      <figure><img src="./img/c_pro12.jpg"></figure>
+                      <p class="txt">그린더마 마일드 시카 세럼 커버 쿠션 SPF50+PA+++ (2종 택 1)</p>
+                      <p class="price"><del>25,000원</del> 17,900원</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--common_box-->
+            </li>
+          </ul>
+          <div class="right">
+            <div>
+              <p><i class="xi-crown"></i></p>
+              <p class="txt">베스트셀러</p>
+            </div>
+            <div>
+              <p><i class="xi-gift"></i></p>
+              <p class="txt">신제품</p>
+            </div>
+            <div>
+              <p><i class="xi-desktop"></i></p>
+              <p class="txt">온라인전용</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--lnb_outer-->
+
+
+    <seciton class="visaul_main">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <picture class="swiper-slide">
+            <source media="(min-width:1024px)" srcset="img/main_visual01.jpg">
+            <source media="(min-width:601px)" srcset="img/main_visual01_tab.jpg">
+            <source media="(min-width:320px)" srcset="img/main_visual01_mb_h.jpg">
+            <img src="./img/main_visual01.jpg" style="width: 100%;">
+          </picture>   
+          <picture class="swiper-slide">
+            <source media="(min-width:1024px)" srcset="img/main_visual02.jpg">
+            <source media="(min-width:601px)" srcset="img/main_visual02_tab.jpg">
+            <source media="(min-width:320px)" srcset="img/main_visual02_mb_h.jpg">
+            <img src="./img/main_visual02.jpg" style="width: 100%;">
+          </picture>   
+          <picture class="swiper-slide">
+            <source media="(min-width:1024px)" srcset="img/main_visual03.jpg">
+            <source media="(min-width:601px)" srcset="img/main_visual03_tab.jpg">
+            <source media="(min-width:320px)" srcset="img/main_visual03_mb_h.jpg">
+            <img src="./img/main_visual03.jpg" style="width: 100%;">
+          </picture>   
+        </div>   
+      </div>
+    </seciton><!--visaul_main-->
+
+
+    <section class="best_product">
+      <h3>BEST ITEM</h3>
+
+      <input type="checkbox" id = best_more>
+
+      <div class="best_container">
+
+        <div class="best_pro b_pro01">
+          <figure>
+            <img src="./img/best_img01.jpg">
+            <div class="hover_bx">
+              <p><i class="xi-search"></i></p>
+              <p><i class="xi-cart-o"></i></p>
+              <p><i class="xi-gift-o"></i></p>
+            </div>
+          </figure>
+          <p class="main_txt">비타페어C 잡티세럼 스페셜 기획세트</p>
+          <p class="price"><span>25%</span> 24,900원 <del> 18,900원</del></p>
+          <p class="star"><img src="./img/icon_star.jpg"></p>
+          <p class="review">리뷰26</p>
+          <div class="tab_bx">
+            <p><i class="xi-search"></i></p>
+            <p><i class="xi-cart-o"></i></p>
+            <p><i class="xi-gift-o"></i></p>
+          </div>
+        </div>
+
+        <div class="best_pro b_pro02">
+          <figure>
+            <img src="./img/best_img02.jpg">
+            <div class="hover_bx">
+              <p><i class="xi-search"></i></p>
+              <p><i class="xi-cart-o"></i></p>
+              <p><i class="xi-gift-o"></i></p>
+            </div>
+          </figure>
+          <p class="main_txt">데일리 베이직 팔레트(4종택 1)</p>
+          <p class="price"><span>63%</span> 5,900원 <del> 16,000원</del></p>
+          <p class="star"><img src="./img/icon_star.jpg"></p>
+          <p class="review">리뷰14</p>
+          <div class="tab_bx">
+            <p><i class="xi-search"></i></p>
+            <p><i class="xi-cart-o"></i></p>
+            <p><i class="xi-gift-o"></i></p>
+          </div>
+        </div>
+
+        <div class="best_pro b_pro03">
+          <figure>
+            <img src="./img/best_img03.jpg">
+            <div class="hover_bx">
+              <p><i class="xi-search"></i></p>
+              <p><i class="xi-cart-o"></i></p>
+              <p><i class="xi-gift-o"></i></p>
+            </div>
+          </figure>
+          <p class="main_txt">리얼 네이처 폼 클렌져(5종택 1)</p>
+          <p class="price"><span>50%</span> 3,300원 <del> 6,600원</del></p>
+          <p class="star"><img src="./img/icon_star.jpg"></p>
+          <p class="review">리뷰63</p>
+          <div class="tab_bx">
+            <p><i class="xi-search"></i></p>
+            <p><i class="xi-cart-o"></i></p>
+            <p><i class="xi-gift-o"></i></p>
+          </div>
+        </div>
+
+        <div class="best_pro b_pro04">
+          <figure>
+            <img src="./img/best_img04.jpg">
+            <div class="hover_bx">
+              <p><i class="xi-search"></i></p>
+              <p><i class="xi-cart-o"></i></p>
+              <p><i class="xi-gift-o"></i></p>
+            </div>
+          </figure>
+          <p class="main_txt">그린더마 마일드 시카 세럼 커버쿠 SPF50+PA++(2종택 1)</p>
+          <p class="price"><span>28%</span> 17,900원 <del> 25,000원</del></p>
+          <p class="star"><img src="./img/icon_star.jpg"></p>
+          <p class="review">리뷰12</p>
+          <div class="tab_bx">
+            <p><i class="xi-search"></i></p>
+            <p><i class="xi-cart-o"></i></p>
+            <p><i class="xi-gift-o"></i></p>
+          </div>
+        </div>
+
+        <div class="best_pro b_pro05">
+          <figure>
+            <img src="./img/best_img05.jpg">
+            <div class="hover_bx">
+              <p><i class="xi-search"></i></p>
+              <p><i class="xi-cart-o"></i></p>
+              <p><i class="xi-gift-o"></i></p>
+            </div>
+          </figure>
+          <p class="main_txt">진생 로얄 실크 워터리 크림 with 아이크림 기획세트</p>
+          <p class="price"><span>50%</span> 88,000원 <del> 176,000원</del></p>
+          <p class="star"><img src="./img/icon_star.jpg"></p>
+          <p class="review">리뷰9</p>
+          <div class="tab_bx">
+            <p><i class="xi-search"></i></p>
+            <p><i class="xi-cart-o"></i></p>
+            <p><i class="xi-gift-o"></i></p>
+          </div>
+        </div>
+
+        <div class="best_pro b_pro06">
+          <figure>
+            <img src="./img/best_img06.jpg">
+            <div class="hover_bx">
+              <p><i class="xi-search"></i></p>
+              <p><i class="xi-cart-o"></i></p>
+              <p><i class="xi-gift-o"></i></p>
+            </div>
+          </figure>
+          <p class="main_txt">콜라겐 드림 70 에센스</p>
+          <p class="price"><span>65%</span> 8,710원 <del> 24,900원</del></p>
+          <p class="star"><img src="./img/icon_star.jpg"></p>
+          <p class="review">리뷰3</p>
+          <div class="tab_bx">
+            <p><i class="xi-search"></i></p>
+            <p><i class="xi-cart-o"></i></p>
+            <p><i class="xi-gift-o"></i></p>
+          </div>
+        </div>
+
+        <div class="best_pro b_pro07">
+          <figure>
+            <img src="./img/best_img07.jpg">
+            <div class="hover_bx">
+              <p><i class="xi-search"></i></p>
+              <p><i class="xi-cart-o"></i></p>
+              <p><i class="xi-gift-o"></i></p>
+            </div>
+          </figure>
+          <p class="main_txt">블랙빈 안티 헤어로스 샴푸_520ml</p>
+          <p class="price"><span>30%</span> 13,900원 <del> 19,900원</del></p>
+          <p class="star"><img src="./img/icon_star.jpg"></p>
+          <p class="review">리뷰44</p>
+          <div class="tab_bx">
+            <p><i class="xi-search"></i></p>
+            <p><i class="xi-cart-o"></i></p>
+            <p><i class="xi-gift-o"></i></p>
+          </div>
+        </div>
+
+        <div class="best_pro b_pro08">
+          <figure>
+            <img src="./img/best_img08.jpg">
+            <div class="hover_bx">
+              <p><i class="xi-search"></i></p>
+              <p><i class="xi-cart-o"></i></p>
+              <p><i class="xi-gift-o"></i></p>
+            </div>
+          </figure>
+          <p class="main_txt">캐모마일 카밍 토너</p>
+          <p class="price"><span>74%</span> 6,900원 <del> 25,000원</del></p>
+          <p class="star"><img src="./img/icon_star.jpg"></p>
+          <p class="review">리뷰68</p>
+          <div class="tab_bx">
+            <p><i class="xi-search"></i></p>
+            <p><i class="xi-cart-o"></i></p>
+            <p><i class="xi-gift-o"></i></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="more_btn">
+        <label for="best_more" class="best_more">더보기<i class="xi-caret-down-min"></i></label>
+      </div>
+
+    </section><!--best_product-->
+
+
+    <section class="event_banner_outer">
+      <div class="event_banner">
+        <div class="eve_ban01">
+          <figure><img src="./img/eve_ban01.jpg"></figure>
+        </div>
+        <div class="eve_ban02">
+          <figure><img src="./img/eve_ban02.jpg"></figure>
+        </div>
+    </div>
+    </section><!--event_banner-->
+
+    
+    <section class="recommend_product">
+      <h3>카테고리별 추천상품</h3>
+
+      <input type="radio" id="rec_rad01" name="rec_rad" checked>
+      <input type="radio" id="rec_rad02" name="rec_rad">
+      <input type="radio" id="rec_rad03" name="rec_rad">
+      <input type="radio" id="rec_rad04" name="rec_rad">
+
+      <div class="rec_container">
+        
+        <div class="rec_label_box">
+          <label for="rec_rad01" class="basic">기초</label>
+          <label for="rec_rad02" class="ssun">썬케어</label>
+          <label for="rec_rad03" class="mask">마스크 시트/팩</label>
+          <label for="rec_rad04" class="body">바디/헤어</label>
+        </div><!--rec_label_box-->
+  
+        <div class="rec_web_box">
+          <div class="basic_container rec_box">
+
+            <div class="rec_pro rec_pro01">
+              <figure><img src="./img/r_basic_img01.jpg"></figure>
+              <p class="main_txt">슈퍼 아쿠아 맥스 수분 에멀젼</p>
+              <p class="price"><span>30%</span> 9,730원 <del> 13,900원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+          
+            <div class="rec_pro rec_pro02">
+              <figure><img src="./img/r_basic_img02.jpg"></figure>
+              <p class="main_txt">스네일 솔루션 스킨 부스터</p>
+              <p class="price"><span>60%</span> 17,600원 <del> 44,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro03">
+              <figure><img src="./img/r_basic_img03.jpg"></figure>
+              <p class="main_txt">슈퍼 아쿠아 맥스 프레시 수분크림 [지성용]</p>
+              <p class="price"><span>50%</span> 12,500원 <del> 25,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro04">
+              <figure><img src="./img/r_basic_img04.jpg"></figure>
+              <p class="main_txt">슈퍼 아쿠아 맥스 모이스처 수분크림 [건성용]</p>
+              <p class="price"><span>50%</span> 12,500원 <del> 25,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+          </div>
+
+          <div class="ssun_container rec_box">
+
+            <div class="rec_pro rec_pro01">
+              <figure><img src="./img/r_ssun_img01.jpg"></figure>
+              <p class="main_txt">캘리포니아 알로에 데일리 선블럭 SPF50+ PA++++</p>
+              <p class="price">15,900원</p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+          
+            <div class="rec_pro rec_pro02">
+              <figure><img src="./img/r_ssun_img02.jpg"></figure>
+              <p class="main_txt">캘리포니아 알로에 보송 선스틱 SPF50+ PA++++</p>
+              <p class="price"><span>25%</span> 25,000원 <del> 18,900원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro03">
+              <figure><img src="./img/r_ssun_img03.jpg"></figure>
+              <p class="main_txt">캘리포니아 알로에 점보 선로션 SPF50+ PA++++</p>
+              <p class="price"><span>50%</span> 14,000원 <del> 28,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro04">
+              <figure><img src="./img/r_ssun_img04.jpg"></figure>
+              <p class="main_txt">캘리포니아 알로에 워터프루프 선블럭 SPF50+ PA++++</p>
+              <p class="price"><span>30%</span> 15,400원 <del> 22,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+          </div>
+
+          <div class="mask_container rec_box">
+
+            <div class="rec_pro rec_pro01">
+              <figure><img src="./img/r_mask_img01.jpg"></figure>
+              <p class="main_txt">비타페어C 마스크 시트</p>
+              <p class="price"><span>30%</span> 2,100원 <del> 3,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro02">
+              <figure><img src="./img/r_mask_img02.jpg"></figure>
+              <p class="main_txt">그린더마 마일드 시카 카밍 케어 마스크 시트</p>
+              <p class="price"><span>50%</span> 1,000원 <del> 2,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro03">
+              <figure><img src="./img/r_mask_img03.jpg"></figure>
+              <p class="main_txt">[1+1] 더 착한 마음 마스크 시트_히알루론산</p>
+              <p class="price">1,200원</p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro04">
+              <figure><img src="./img/r_mask_img04.jpg"></figure>
+              <p class="main_txt">[10+10] 불가리안 로즈 에센셜 마스크 시트 (20매)</p>
+              <p class="price"><span>38%</span> 5,900원 <del> 9,500원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+          </div>
+
+          <div class="body_container rec_box">
+
+            <div class="rec_pro rec_pro01">
+              <figure><img src="./img/r_body_img01.jpg"></figure>
+              <p class="main_txt">아르간 에센셜 딥케어 샴푸</p>
+              <p class="price"><span>30%</span> 8,400원 <del> 12,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+          
+            <div class="rec_pro rec_pro02">
+              <figure><img src="./img/r_body_img02.jpg"></figure>
+              <p class="main_txt">아르간 에센셜 딥케어 샴푸 (대용량)</p>
+              <p class="price"><span>30%</span>21,630원 <del> 30,900원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro03">
+              <figure><img src="./img/r_body_img03.jpg"></figure>
+              <p class="main_txt">블랙빈 안티 헤어 로스 두피 토닉_120ml</p>
+              <p class="price"><span>30%</span> 8,400원 <del> 12,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+            <div class="rec_pro rec_pro04">
+              <figure><img src="./img/r_body_img04.jpg"></figure>
+              <p class="main_txt">아르간 에센셜 딥케어 헤어팩 (대용량)</p>
+              <p class="price"><span>30%</span> 12,600원 <del> 18,000원</del></p>
+              <p class="star"><img src="./img/icon_star.jpg"></p>
+              <p class="review">리뷰26</p>
+            </div>
+
+          </div>
+        </div><!--rec_web_box-->
+
+
+        <div class="rec_mob_box">
+          <div class="basic_container rec_box">
+
+            <div class="swiper mob_mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro01">
+                    <figure><img src="./img/r_basic_img01.jpg"></figure>
+                    <p class="main_txt">슈퍼 아쿠아 맥스 수분 에멀젼</p>
+                    <p class="price"><span>30%</span> 9,730원 <del> 13,900원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide1-->
+                
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro02">
+                    <figure><img src="./img/r_basic_img02.jpg"></figure>
+                    <p class="main_txt">스네일 솔루션 스킨 부스터</p>
+                    <p class="price"><span>60%</span> 17,600원 <del> 44,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide2-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro03">
+                    <figure><img src="./img/r_basic_img03.jpg"></figure>
+                    <p class="main_txt">슈퍼 아쿠아 맥스 프레시 수분크림 [지성용]</p>
+                    <p class="price"><span>50%</span> 12,500원 <del> 25,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide3-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro04">
+                    <figure><img src="./img/r_basic_img04.jpg"></figure>
+                    <p class="main_txt">슈퍼 아쿠아 맥스 모이스처 수분크림 [건성용]</p>
+                    <p class="price"><span>50%</span> 12,500원 <del> 25,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide4-->
+              </div>
+            </div>
+
+          </div>
+
+          <div class="ssun_container rec_box">
+
+            <div class="swiper mob_mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro01">
+                    <figure><img src="./img/r_ssun_img01.jpg"></figure>
+                    <p class="main_txt">캘리포니아 알로에 데일리 선블럭 SPF50+ PA++++</p>
+                    <p class="price">15,900원</p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide1-->
+                
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro02">
+                    <figure><img src="./img/r_ssun_img02.jpg"></figure>
+                    <p class="main_txt">캘리포니아 알로에 보송 선스틱 SPF50+ PA++++</p>
+                    <p class="price"><span>25%</span> 25,000원 <del> 18,900원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide2-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro03">
+                    <figure><img src="./img/r_ssun_img03.jpg"></figure>
+                    <p class="main_txt">캘리포니아 알로에 점보 선로션 SPF50+ PA++++</p>
+                    <p class="price"><span>50%</span> 14,000원 <del> 28,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide3-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro04">
+                    <figure><img src="./img/r_ssun_img04.jpg"></figure>
+                    <p class="main_txt">캘리포니아 알로에 워터프루프 선블럭 SPF50+ PA++++</p>
+                    <p class="price"><span>30%</span> 15,400원 <del> 22,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide4-->
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mask_container rec_box">
+
+            <div class="swiper mob_mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro01">
+                    <figure><img src="./img/r_mask_img01.jpg"></figure>
+                    <p class="main_txt">비타페어C 마스크 시트</p>
+                    <p class="price"><span>30%</span> 2,100원 <del> 3,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide1-->
+                
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro02">
+                    <figure><img src="./img/r_mask_img02.jpg"></figure>
+                    <p class="main_txt">그린더마 마일드 시카 카밍 케어 마스크 시트</p>
+                    <p class="price"><span>50%</span> 1,000원 <del> 2,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide2-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro03">
+                    <figure><img src="./img/r_mask_img03.jpg"></figure>
+                    <p class="main_txt">[1+1] 더 착한 마음 마스크 시트_히알루론산</p>
+                    <p class="price">1,200원</p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide3-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro04">
+                    <figure><img src="./img/r_mask_img04.jpg"></figure>
+                    <p class="main_txt">[10+10] 불가리안 로즈 에센셜 마스크 시트 (20매)</p>
+                    <p class="price"><span>38%</span> 5,900원 <del> 9,500원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide4-->
+              </div>
+            </div>
+
+          </div>
+
+          <div class="body_container rec_box">
+
+            <div class="swiper mob_mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro01">
+                    <figure><img src="./img/r_body_img01.jpg"></figure>
+                    <p class="main_txt">아르간 에센셜 딥케어 샴푸</p>
+                    <p class="price"><span>30%</span> 8,400원 <del> 12,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide1-->
+                
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro02">
+                    <figure><img src="./img/r_body_img02.jpg"></figure>
+                    <p class="main_txt">아르간 에센셜 딥케어 샴푸 (대용량)</p>
+                    <p class="price"><span>30%</span>21,630원 <del> 30,900원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide2-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro03">
+                    <figure><img src="./img/r_body_img03.jpg"></figure>
+                    <p class="main_txt">블랙빈 안티 헤어 로스 두피 토닉_120ml</p>
+                    <p class="price"><span>30%</span> 8,400원 <del> 12,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide3-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro04">
+                    <figure><img src="./img/r_body_img04.jpg"></figure>
+                    <p class="main_txt">아르간 에센셜 딥케어 헤어팩 (대용량)</p>
+                    <p class="price"><span>30%</span> 12,600원 <del> 18,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide4-->
+              </div>
+            </div>
+
+          </div>
+        </div><!--rec_mob_box-->
+
+        
+        <div class="rec_tab_box">
+          <div class="basic_container rec_box">
+
+            <div class="swiper tab_mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro01">
+                    <figure><img src="./img/r_basic_img01.jpg"></figure>
+                    <p class="main_txt">슈퍼 아쿠아 맥스 수분 에멀젼</p>
+                    <p class="price"><span>30%</span> 9,730원 <del> 13,900원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide1-->
+                
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro02">
+                    <figure><img src="./img/r_basic_img02.jpg"></figure>
+                    <p class="main_txt">스네일 솔루션 스킨 부스터</p>
+                    <p class="price"><span>60%</span> 17,600원 <del> 44,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide2-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro03">
+                    <figure><img src="./img/r_basic_img03.jpg"></figure>
+                    <p class="main_txt">슈퍼 아쿠아 맥스 프레시 수분크림 [지성용]</p>
+                    <p class="price"><span>50%</span> 12,500원 <del> 25,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide3-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro04">
+                    <figure><img src="./img/r_basic_img04.jpg"></figure>
+                    <p class="main_txt">슈퍼 아쿠아 맥스 모이스처 수분크림 [건성용]</p>
+                    <p class="price"><span>50%</span> 12,500원 <del> 25,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide4-->
+              </div>
+            </div>
+
+          </div>
+
+          <div class="ssun_container rec_box">
+
+            <div class="swiper tab_mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro01">
+                    <figure><img src="./img/r_ssun_img01.jpg"></figure>
+                    <p class="main_txt">캘리포니아 알로에 데일리 선블럭 SPF50+ PA++++</p>
+                    <p class="price">15,900원</p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide1-->
+                
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro02">
+                    <figure><img src="./img/r_ssun_img02.jpg"></figure>
+                    <p class="main_txt">캘리포니아 알로에 보송 선스틱 SPF50+ PA++++</p>
+                    <p class="price"><span>25%</span> 25,000원 <del> 18,900원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide2-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro03">
+                    <figure><img src="./img/r_ssun_img03.jpg"></figure>
+                    <p class="main_txt">캘리포니아 알로에 점보 선로션 SPF50+ PA++++</p>
+                    <p class="price"><span>50%</span> 14,000원 <del> 28,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide3-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro04">
+                    <figure><img src="./img/r_ssun_img04.jpg"></figure>
+                    <p class="main_txt">캘리포니아 알로에 워터프루프 선블럭 SPF50+ PA++++</p>
+                    <p class="price"><span>30%</span> 15,400원 <del> 22,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide4-->
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mask_container rec_box">
+
+            <div class="swiper tab_mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro01">
+                    <figure><img src="./img/r_mask_img01.jpg"></figure>
+                    <p class="main_txt">비타페어C 마스크 시트</p>
+                    <p class="price"><span>30%</span> 2,100원 <del> 3,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide1-->
+                
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro02">
+                    <figure><img src="./img/r_mask_img02.jpg"></figure>
+                    <p class="main_txt">그린더마 마일드 시카 카밍 케어 마스크 시트</p>
+                    <p class="price"><span>50%</span> 1,000원 <del> 2,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide2-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro03">
+                    <figure><img src="./img/r_mask_img03.jpg"></figure>
+                    <p class="main_txt">[1+1] 더 착한 마음 마스크 시트_히알루론산</p>
+                    <p class="price">1,200원</p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide3-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro04">
+                    <figure><img src="./img/r_mask_img04.jpg"></figure>
+                    <p class="main_txt">[10+10] 불가리안 로즈 에센셜 마스크 시트 (20매)</p>
+                    <p class="price"><span>38%</span> 5,900원 <del> 9,500원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide4-->
+              </div>
+            </div>
+
+          </div>
+
+          <div class="body_container rec_box">
+
+            <div class="swiper tab_mySwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro01">
+                    <figure><img src="./img/r_body_img01.jpg"></figure>
+                    <p class="main_txt">아르간 에센셜 딥케어 샴푸</p>
+                    <p class="price"><span>30%</span> 8,400원 <del> 12,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide1-->
+                
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro02">
+                    <figure><img src="./img/r_body_img02.jpg"></figure>
+                    <p class="main_txt">아르간 에센셜 딥케어 샴푸 (대용량)</p>
+                    <p class="price"><span>30%</span>21,630원 <del> 30,900원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide2-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro03">
+                    <figure><img src="./img/r_body_img03.jpg"></figure>
+                    <p class="main_txt">블랙빈 안티 헤어 로스 두피 토닉_120ml</p>
+                    <p class="price"><span>30%</span> 8,400원 <del> 12,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide3-->
+
+                <div class="swiper-slide">
+                  <div class="rec_pro rec_pro04">
+                    <figure><img src="./img/r_body_img04.jpg"></figure>
+                    <p class="main_txt">아르간 에센셜 딥케어 헤어팩 (대용량)</p>
+                    <p class="price"><span>30%</span> 12,600원 <del> 18,000원</del></p>
+                    <p class="star"><img src="./img/icon_star.jpg"></p>
+                    <p class="review">리뷰26</p>
+                  </div>
+                </div><!--slide4-->
+              </div>
+            </div>
+
+          </div>
+        </div><!--rec_tab_box-->
+
+      </div><!--rec_container-->
+
+
+    </section><!--recommend_product-->
+
+    
+    <section class="view_rank">
+      <h3>실시간 VIEW 랭킹</h3>
+
+      <input type="radio" id=view_rad01 name="view_rad" checked>
+      <input type="radio" id=view_rad02 name="view_rad">
+      <input type="radio" id=view_rad03 name="view_rad">
+      <input type="radio" id=view_rad04 name="view_rad">
+      <input type="radio" id=view_rad05 name="view_rad">
+      
+
+      <div class="view_container">
+        
+        <div class="view_label_box">
+          <label for="view_rad01"><span>1</span> [선착순 증정 GIFT] 진생 로얄 실크 워터리 크림 with 아이크림 기획세트</label>
+          <label for="view_rad02"><span>2</span> 굿스킨 앰플 (10종 택1)1</label>
+          <label for="view_rad03"><span>3</span> [Special Set] 블랙빈 두피청정 set 520ml x 21</label>
+          <label for="view_rad04"><span>4</span> 허브 블렌딩 에센스</label>
+          <label for="view_rad05"><span>5</span> 데일리 베이직 팔레트 (4종 택 1)3</label>
+        </div><!--view_label_box-->
+        
+        <div class="rank rank01">
+
+          <div class="view01 view_pro">
+            <figure><img src="./img/best_img05.jpg"></figure>
+          </div>
+
+          <div class="txt">
+            <p class="eye"><i class="xi-eye-o"></i>현재 1022명이 보고 있습니다.</p>
+            <p class="main_txt">진생 로얄 실크 워터리 크림 with 아이크림 기획세트</p>
+            <p class="price"><span>50%</span> 8,8000원 <del>176,000원</del></p>
+            <p class="star"><img src="./img/icon_star.jpg"></p>
+            <p class="review">리뷰9</p>
+          </div>
+
+        </div><!--rank01-->
+
+        <div class="rank rank02">
+
+          <div class="view02 view_pro">
+            <figure><img src="./img/rank_img02.jpg"></figure>
+          </div>
+
+          <div class="txt">
+            <p class="eye"><i class="xi-eye-o"></i>현재 812명이 보고 있습니다.</p>
+            <p class="main_txt">굿스킨 앰플 (10종 택1)</p>
+            <p class="price"><span>76%</span> 5,500원 <del>23,000원</del></p>
+            <p class="star"><img src="./img/icon_star.jpg"></p>
+            <p class="review">리뷰9</p>
+          </div>
+
+        </div><!--rank02-->
+
+        <div class="rank rank03">
+
+          <div class="view01 view_pro">
+            <figure><img src="./img/rank_img03.jpg" alt=""></figure>
+          </div>
+
+          <div class="txt">
+            <p class="eye"><i class="xi-eye-o"></i>현재 709명이 보고 있습니다.</p>
+            <p class="main_txt">블랙빈 안티 헤어로스 샴푸 520ml 기획세트</p>
+            <p class="price"><span>24%</span> 18,900원 <del>25,000원</del></p>
+            <p class="star"><img src="./img/icon_star.jpg"></p>
+            <p class="review">리뷰9</p>
+          </div>
+
+        </div><!--rank03-->
+
+        <div class="rank rank04">
+
+          <div class="view01 view_pro">
+            <figure><img src="./img/rank_img04.jpg" alt=""></figure>
+          </div>
+
+          <div class="txt">
+            <p class="eye"><i class="xi-eye-o"></i>현재 481명이 보고 있습니다.</p>
+            <p class="main_txt">키스 마이 에어리 매트 립스틱 (6종 택 1)</p>
+            <p class="price"><span>59%</span> 4,900원 <del>12,000원</del></p>
+            <p class="star"><img src="./img/icon_star.jpg"></p>
+            <p class="review">리뷰9</p>
+          </div>
+
+        </div><!--rank04-->
+
+        <div class="rank rank05">
+
+          <div class="view01 view_pro">
+            <figure><img src="./img/best_img02.jpg" alt=""></figure>
+          </div>
+
+          <div class="txt">
+            <p class="eye"><i class="xi-eye-o"></i>현재 124명이 보고 있습니다.</p>
+            <p class="main_txt">데일리 베이직 팔레트 (4종 택 1)3</p>
+            <p class="price"><span>50%</span> 8,8000원 <del>176,000원</del></p>
+            <p class="star"><img src="./img/icon_star.jpg"></p>
+            <p class="review">리뷰9</p>
+          </div>
+
+        </div><!--rank05-->
+
+
+
+      </div><!--view_container-->
+
+
+    </section><!--view_rank-->
+    
+    
+    <section class="best_review">
+      <h3>BEST REVIEW</h3>
+
+      <div class="best_container">
+        
+        <div class="review rev01">
+
+          <div class="rev_img">
+            <figure><img src="./img/review_img01.jpg" alt=""></figure>
+          </div>
+          
+          <div class="txt">
+            <p class="main_txt">입술을 예쁘게 만들어주는 유리알 광택 </p>
+            <p class="star">
+              <i class="xi-star"></i> 
+              <i class="xi-star"></i> 
+              <i class="xi-star"></i> 
+              <i class="xi-star"></i> 
+              <i class="xi-star"></i> 
+            </p>
+            <p class="sub_txt">
+              바른 직후도 넘 예쁘지만 시간이 지날수록 시럽물막이 싹 올라오면서 입술이 정말 예뻐보이더라구요 ㅠㅠ 게다가 틴트 본연의 색이 고대로 착색되기 때문에 지워짐마저 예쁘다는..♥ 정말 버릴 컬러 하나 없는 듀 틴트 그 중에서도 #쿨톤 인 저의 
+              pick은 1호, 6호 컬러였는데요 !! 1
+              호 러브 레드는 체리 레드컬러로 호
+              불호 없을만한 쨍하고 화사한 컬러였고, 6호 로즈 메모리는 빈티지 로즈 컬러로 말린장미 느낌의 분위기 있는 컬러였답니다</p>
+            <p class="id">suh********</p>
+            <p class="pro_txt">바이플라워 글라스 듀 틴트 (8종 택 1)</p>
+          </div>
+
+        </div><!--rev01-->
+
+        <div class="review rev02">
+
+          <div class="rev_img">
+            <figure><img src="./img/review_img02.jpg" alt=""></figure>
+          </div>
+          
+          <div class="txt">
+            <p class="main_txt">왕크니까 왕좋아요</p>
+            <p class="star">
+              <i class="xi-star"></i> 
+              <i class="xi-star"></i> 
+              <i class="xi-star"></i> 
+              <i class="xi-star"></i> 
+              <i class="xi-star"></i> 
+            </p>
+            <p class="sub_txt">
+              아니 손가락 네개 들어가는 퍼프는 처음인데요 ㅋㅋㅋㅋㅋㅋㅋ>요즘 알바
+              다닐 때 선크림+컨실러 조합만 하고 다니는데 이 선쿠션 덕분에 준비하는 시간
+              이 아주 줄었습니다 *^^* 고냥 톡톡톡 몇번 하면 얼굴 도포 완료.. 목 도포 완료..
+              저는 유기자차보다는 무기자차 선크림을 사용하는 편인데 이 선크림은 발랐을 때 적
+              당히 백탁현상이 있어 톤업효과도 되고 좋습니당 ꉂꉂ(ᵔᗜᵔ*) 쿠션 형식으로 되어있으니 
+              덧바를 때 얼굴에 손을 대지 않아도 되니 요즘 같은 위생에 신경써야하는 시기에 아주 좋은
+              선쿠션이에요! 저는 마스크 쓰고 보이는 이마와 눈가 주변은 외출해서 꼭 한번씩 더 덧발라주
+              곤 합니다! 그리고 네이처리퍼블릭 선크림만의 장점 (?) !! 아주 보송한 마무리감이에요!
+              끈적이지 않아서 마스크 쓰는데도 불편하지 않고 선크림 특유의 유분기로 광 도는 그런 
+              느낌이 없어서 좋아요! 퍼프가 너무 커서 빠지는 분들은 손가락을 검지와 나머지 세 손가
+              으로, 혹은 두개 두개씩 벌려서 퍼프 끝과 끝을 밀어낸다는 생각으로 ㅋㅋㅋㅋ 쓰시면 됩니당!</p>
+            <p class="id">suh********</p>
+            <p class="pro_txt">그린더마 마일드 시카 빅 선쿠션 SPF50+PA++++</p>
+          </div>
+
+        </div><!--rev02-->
+
+
+
+      </div>
+    </section><!--best_review-->
+
+
+    <section class="service">
+      
+      <div class="service_container">
+        <div class="service_box01 service_box">
+          <p class="main_txt">공지사항</p>
+          <p class="line"></p>
+          <p class="sub_txt">
+            [공지]고객상담실 유선 상담 한시적 중단 안내<br>
+            [공지] 출석체크 이벤트 종료 안내
+          </p>
+        </div>
+        <div class="service_box02 service_box">
+          <p class="main_txt">멤버십</p>
+          <p class="line"></p>
+          <p class="sub_txt">
+            구매할수록 쌓이는 혜택<br>
+            네이처리퍼블릭 멤버십
+          </p>
+        </div>
+        <div class="service_box03 service_box">
+          <p class="main_txt">고객센터</p>
+          <p class="line"></p>
+          <p class="sub_txt">
+            <span>080-890-6000</span><br>
+            월~금요일(공휴일 제외) 09:00 ~ 18:00
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="footer_menu_outer">
+      <div class="footer_menu">
+
+        <div class="mob_ft_menu">
+          <ul>
+            <li><a href="#!">이용약관</a></li>
+            <li><a href="#!">개인정보처리방침</a></li>
+            <li><a href="#!">가맹점문의</a></li>
+            <li><a href="#!">제휴문의</a></li>
+            <li><a href="#!">본사정품판매처</a></li>
+            <li>
+              <select>
+                <option>GLOBAL SITE</option>
+                <option>GLOBAL SITE</option>
+                <option>GLOBAL SITE</option>
+              </select>
+            </li>
+          </ul>
+        </div><!--mob_ft_menu-->
+
+        <div class="web_ft_menu">
+          <ul>
+            <li><a href="#!">이용약관</a></li>
+            <li><a href="#!">개인정보처리방침</a></li>
+            <li><a href="#!">가맹점문의</a></li>
+            <li><a href="#!">제휴문의</a></li>
+            <li><a href="#!">본사정품판매처</a></li>
+          </ul>
+          <select>
+            <option>GLOBAL SITE</option>
+            <option>GLOBAL SITE</option>
+            <option>GLOBAL SITE</option>
+          </select>
+        </div><!--web_ft_menu-->
+
+      </div>
+    </div><!--footer_menu_outer-->
+
+
+    <footer class="footer">
+      <h3><img src="./img/logo.png" alt=""></h3>
+      <div class="address">
+        (주)네이처리퍼블릭대표이사 : 정운호주소 : 서울 강남구 테헤란로 534 (대치동, 글라스타워빌딩) 22,23,24층<br>
+        사업자등록번호 : 220-87-77410통신판매업 신고번호 : 강남 00622호 사업자 정보 확인<br>
+        개인정보관리책임자 : 김형진 cpo@naturerepublic.com<br>
+        COPYRIGHTS(C) 2016 NATURE REPUBLIC ALL RIGHTS RESERVED.
+      </div>
+
+      <div class="safety">
+        <div class="s_logo">
+          <figure><img src="./img/img_kcp.png" alt=""></figure>
+        </div>
+        <div class="txt">
+          KCP구매안전(에스크로)서비스
+          고객님의 안전거래를 위하여 무통장입금 거래에 대해
+          KCP의 구매안전서비스를 적용하고 있습니다.
+        </div>
+      </div>
+    </footer><!--footer-->
+
+    <div class="scroll_top"><i class="xi-arrow-top"></i></div>
+
+  </div>
+
+
+
+</body>
+</html>
